@@ -1,12 +1,11 @@
 #include <iostream> // Preprocessor directive for input/output
 
 int main() { // Main function
-    std::cout << "This is my first C++ program!"; // Output statement
-    return 0; // Return statement (good practice)
-}
+    std::cout << "This is my first C++ program!"<< std::endl; // Output statement
+
 /*#include <iostream> — loads the library that lets you print text to the screen.
 int main() { ... } — this is the main function, where every C++ program starts running.
-cout << "Hello, World!"; — prints the text Hello, World! to the screen. g++ learning.cpp -o learning ./learning*/
+cout << "Hello, World!"; — prints the text Hello, World! to the screen. g++ learning.cpp -o learning,,,, ./learning*/
 
 /*In C++, we use )std::cout) to print output to the console.
 The text to be printed is placed within double quotes and followed by the insertion operator <<.
@@ -15,15 +14,23 @@ Every statement in C++ must end with a semicolon ;.*/
 /*The iostream library provides the tools needed for input and output — without it,
 std::cout would not be available.*/
 
-
-#include <iostream>
-
-int main() {
-    // Declare and initialize variables here
-    
     int quantity = 5;
     // Output the values - Don't change below this line
-    std::cout << "Quantity: " << quantity;
+    std::cout << "Quantity: " << quantity << std::endl;
+
+/*float is used to store numbers with a decimal point. For example: float price = 99.99f;
+The 'f' (or 'F') at the end of a decimal number is called a literal suffix,
+and it explicitly tells the compiler that this number should be treated as a float.*/
+
+/*double is used to store numbers with a decimal point, but with double precision.
+Float typically has 7 decimal digits of precision whereas double typically has 15-17 decimal digits of precision.
+For example:*/
+
+    float itemPrice = 24.99f;
+    double temperature = 23.5;
+    
+    std::cout << "Price: "<< itemPrice << std::endl;
+    std::cout << "Temperature: "<< temperature << std::endl;
     
     return 0;
 }
