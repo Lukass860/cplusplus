@@ -1,4 +1,6 @@
 #include <iostream> // Preprocessor directive for input/output
+#include <string>
+using namespace std;
 
 int main() { // Main function
     std::cout << "This is my first C++ program!"<< std::endl; // Output statement
@@ -32,5 +34,23 @@ For example:*/
     std::cout << "Price: "<< itemPrice << std::endl;
     std::cout << "Temperature: "<< temperature << std::endl;
     
+
+//1. Add this line after your includes:
+//using namespace std;
+/*#include <string>
+using namespace std;  // Method 1
+
+int main() {
+    string s1 = "Hello";  // Method 1 style
+    std::string s2 = "Hello again";  // Method 2 style (still works even with 'using namespace')
+    return 0;
+}*/
+
+    // Declare and initialize variables here
+    
+    string coddy = "I am learning to code with Coddy";
+    // Output the values
+    std::cout << "Coddy = \"" << coddy << "\"" <<std::endl;
+
     return 0;
 }
