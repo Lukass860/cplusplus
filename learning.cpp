@@ -33,7 +33,6 @@ For example:*/
     
     std::cout << "Price: "<< itemPrice << std::endl;
     std::cout << "Temperature: "<< temperature << std::endl;
-    
 
 //1. Add this line after your includes:
 //using namespace std;
@@ -52,5 +51,27 @@ int main() {
     // Output the values
     std::cout << "Coddy = \"" << coddy << "\"" <<std::endl;
 
+    //balooon
+    // Type your code below
+    // Replace the placeholder value with the value the task describes
+    bool isLoggedIn = true;
+    // Don\'t change the line below
+    std::cout << "isLoggedIn = " << isLoggedIn<<std::endl;
+   
+
+    //A char is a single character (For example: 1, 6, %, b, p, ., T, etc.)
+    //To initialize a char value in a variable, enclose it within single quotation marks: char c1 = 'h';
+
+    // Type your code below
+    char initial = 'B';
+    
+    // Don't change the line below
+    std::cout << "initial = '" << initial << "'"<<std::endl;
+    
+    //A constant is a special type of variable that cannot be changed once it is initialized.
+    
+const double PI = 3.14159;
+    // Don't change the line below
+    std::cout << "PI = " << PI<<std::endl;
     return 0;
 }
