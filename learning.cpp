@@ -73,5 +73,30 @@ int main() {
 const double PI = 3.14159;
     // Don't change the line below
     std::cout << "PI = " << PI<<std::endl;
+    
+/*Implicit (automatic) casting — happens automatically:
+int number = 5;
+double decimal = number; // automatically becomes 5.0
+
+int x = 7;
+double result = x / 2.0; // result is 3.5 (int/int discards decimal)*/
+
+/*Explicit (manual) casting — C-style and modern static_cast
+double price = 19.99;
+
+int a = (int) price;                  // C-style: becomes 19
+int b = static_cast<int>(price);     // modern C++ preferred: becomes 19*/
+
+/*Note: Casting a double to int truncates (drops) the decimal part.
+ static_cast<>() is preferred in modern C++ for clarity and compiler safety.*/
+    // Declare and initialize variables
+    double price = 99.99;
+    int intPrice =(int) price; // Explicit casting from double to int
+    
+    
+    // Output the values
+    std::cout << "Price: " << price << std::endl;
+    std::cout << "Int Price: " << intPrice << std::endl;
+    
     return 0;
 }
