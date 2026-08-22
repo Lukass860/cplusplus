@@ -100,3 +100,37 @@ int b = static_cast<int>(price);     // modern C++ preferred: becomes 19*/
     
     return 0;
 }
+
+/*Using arithmetic operators with integers:
+
+int a = 3;
+int b = 5;
+int c = a + b; // c holds 8
+Using arithmetic operators with decimal numbers (doubles):
+
+double x = 3.3;
+double y = 4.1;
+double z = x + y; // z holds 7.4*/
+
+
+/*Modulo Operator
+
+
+
+The modulo operator % gives the remainder of a division:(10/3. paliek 1. 10-9.)
+
+result = dividend % divisor;
+Example:
+
+result = 10 % 3;  // result is 1
+Common use case - checking if a number is even or odd:
+
+Even numbers: number % 2 == 0
+Odd numbers: number % 2 == 1
+For floating-point numbers, use fmod() from <cmath>:
+
+#include <cmath>
+
+double result = fmod(5.2, 2.0);  // result is 1.2
+double result2 = fmod(7.8, 3.5); // result2 is 0.8
+When the divisor is larger than the dividend, the result equals the dividend. This applies to both % and fmod().*/
