@@ -1,5 +1,6 @@
 #include <iostream> // Preprocessor directive for input/output
 #include <string>
+#include <cmath>
 using namespace std;
 
 int main() { // Main function
@@ -98,9 +99,6 @@ int b = static_cast<int>(price);     // modern C++ preferred: becomes 19*/
     std::cout << "Price: " << price << std::endl;
     std::cout << "Int Price: " << intPrice << std::endl;
     
-    return 0;
-}
-
 /*Using arithmetic operators with integers:
 
 int a = 3;
@@ -134,3 +132,49 @@ For floating-point numbers, use fmod() from <cmath>:
 double result = fmod(5.2, 2.0);  // result is 1.2
 double result2 = fmod(7.8, 3.5); // result2 is 0.8
 When the divisor is larger than the dividend, the result equals the dividend. This applies to both % and fmod().*/
+
+int a = 9;
+double b = 2.6;
+int c = 11;
+int d = a % 2;
+int e = a % 3;
+double f = std::fmod(b, 1.5);
+double g = std::fmod(b, 3.9);
+int h = c % 10;
+
+    std::cout << "a = " << a << std::endl;
+    std::cout << "b = " << b << std::endl;
+    std::cout << "c = " << c << std::endl;
+    std::cout << "d = " << d << std::endl;
+    std::cout << "e = " << e << std::endl;
+    std::cout << "f = " << f << std::endl;
+    std::cout << "g = " << g << std::endl;
+    std::cout << "h = " << h << std::endl;
+
+
+/*The increment operator is represented by two plus signs ++,
+ and the decrement operator is represented by two minus signs --.*/
+ 
+ 
+ /* 
+ int count = 5;
+count++; // count is now 6
+
+ int count = 5;
+count = count + 3;  // Add 3: count is now 8
+count = count * 2;  // Multiply by 2: count is now 16
+count = count - 4;  // Subtract 4: count is now 12*/
+
+int count = 0;
+    
+    // Type your code below
+    count ++;
+    count ++;
+    count ++;
+    count ++;
+    count = count * 2;
+    count --;
+    // Don\'t change the line below
+    std::cout << "count = " << count << std::endl;
+    return 0;
+}
