@@ -176,5 +176,58 @@ int count = 0;
     count --;
     // Don\'t change the line below
     std::cout << "count = " << count << std::endl;
+
+//Prefix form: Increments/decrements the variable and then returns the new value.
+//Postfix form: Returns the current value of the variable and then increments/decrements it.
+
+/*      int x = 5;
+int y = x++;
+// y = 5, x = 6 (postfix: y gets the original value, then x is incremented)
+
+int a = 5;
+int b = ++a;
+// b = 6, a = 6 (prefix: a is incremented first, then b gets the new value)     */
+
+/*      int x = 5;
+int y = x--;
+// y = 5, x = 4 (postfix: y gets the original value, then x is decremented)
+
+int a = 5;
+int b = --a;
+// b = 4, a = 4 (prefix: a is decremented first, then b gets the new value)     */
+
+    {
+    int x = 10;
+    int y = 20;
+    int z = 30;
+
+    int a, b, c;
+
+    a = x++;
+    b = --y;
+    c = z--;
+
+    std::cout << "a: " << a << std::endl;
+    std::cout << "b: " << b << std::endl;
+    std::cout << "c: " << c << std::endl;
+    std::cout << "x: " << x << std::endl;
+    std::cout << "y: " << y << std::endl;
+    std::cout << "z: " << z << std::endl;
+ 
+    /*int a = 5;
+a = a + 3; // a holds 8       ===>>> int a = 5;
+                                    a += 3; // a holds 8*/
+/*double price = 10.5;
+price *= 2; // price holds 21.0*/
+
+int count = 0;
+    
+    // Type your code below
+    count += 4;
+    count *= 2;
+    count -= 1;    
+    // Don\'t change the line below
+    std::cout << "count = " << count << std::endl;
     return 0;
+
 }
