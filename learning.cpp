@@ -228,6 +228,76 @@ int count = 0;
     count -= 1;    
     // Don\'t change the line below
     std::cout << "count = " << count << std::endl;
-    return 0;
 
+//      Operator	    Meaning	            Example
+//      ==	            Equal               1 == 2 returns false
+//      !=	            Not Equal	        1 != 2 returns true
+//      >	            Greater Than	    1 > 2 returns false
+//      <=	            Lower or Equal	    1 <= 2 returns true
+
+/*      int var1 = 13;
+        int var2 = 12;
+        bool var3 = var1 != var2;       */
+
+// Type your code below
+    int n1 = 8;
+    int n2 = 9;
+
+    bool n3 = n1 > n2;
+    // Don't change the line below
+    std::cout << "n1 = " << n1 << ", n2 = " << n2 << ", n3 = " << n3 << std::endl;
+
+
+/*      string str1 = "hello";
+        string str2 = "hello";
+        string str3 = "Hello";
+
+        bool result1 = (str1 == str2);  // true
+        bool result2 = (str1 == str3);  // false (case-sensitive)
+        bool result3 = (str1 != str3);  // true     */
+
+/*      string str1 = "a";
+        string str2 = "b";
+        string str3 = "c";
+
+        cout << str2.compare(str1) << endl; 
+        // Positive (b comes after a)
+
+        cout << str2.compare(str3) << endl;
+        // Negative (b comes before c)
+
+        cout << str2.compare(str2) << endl;
+        // 0 (equal strings)                        */
+
+/*  Ja abi teksti ir vienādi, rezultāts ir 0.      Ja pirmais teksts alfabēta secībā ir pirms otrā, 
+rezultāts ir negatīvs skaitlis, bet, ja pēc otrā — pozitīvs skaitlis.   
+Nav svarīgi, kāds tieši ir skaitlis — svarīgi, vai tas ir 0, mazāks par 0 vai lielāks par 0.        */
+
+
+
+
+//      && (AND) dod true, ja visi nosacījumi ir patiesi.
+//      || (OR) dod true, ja vismaz viens nosacījums ir patiess.
+//      ! (NOT) apgriež rezultātu — true kļūst par false, bet false par true.
+
+//  bool b1 = (5 > 3) && (1 == 1); // holds true
+
+/*      bool b2 = !(5 == 4) || (5 == 2); // holds true
+        Explanation: The first operand 
+        (!(5 == 4)) is true so b2 is also true
+        (or operation is true if either one of the operands is true)     */
+
+//  bool b3 = !(1 == 1) || false; // holds false
+//  bool b4 = !(3 > 4); // holds true
+//  bool b5 = !(5 > 10 || 5 > 1); // holds false
+
+// Type your code below
+    bool b1 = 1 < 2;
+    bool b2 = 2 > 3;
+    bool b3 = b1 || b2;
+    
+    // Don't change the line below
+    std::cout << "b3 = " << b3 << std::endl;
+    return 0;
+    }
 }
