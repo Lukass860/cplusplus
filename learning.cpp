@@ -298,6 +298,41 @@ Nav svarīgi, kāds tieši ir skaitlis — svarīgi, vai tas ir 0, mazāks par 0
     
     // Don't change the line below
     std::cout << "b3 = " << b3 << std::endl;
+    
+    
+/*  a	    b	    a && b
+    false	false	false
+    false	true	false
+    true	false	false
+    <true	true	true>
+The only way to get a true for the and (&&) operator is if both a and b are true*/
+
+/*  a	    b	       a || b
+    false	false	false
+    <false	true	true>
+    <true	false	true>
+    <true	true	true>
+In this case, to get a true result, either a or b should be true.*/
+
+/*  a	    !a
+    false	true
+    true	false
+Here the value of a is reversed. If a is false then !a is true*/
+
+// Type your code below
+    int f1 = 1 + 2;
+    int f2 = 2 + 3;
+    bool f3 = !((f1 + f2) > (f1 * f2));
+    
+    // Don't change the line below
+    std::cout << "f3 = " << f3 << std::endl;
+
+    bool g1 = true;
+    bool g2 = true;
+    bool g3 = false;
+    
+    bool g4 = g1 && g2 && (!g3);
+    std::cout << "g4 = " << g4 << std::endl;
     return 0;
-    }
+     }
 }
